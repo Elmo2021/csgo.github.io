@@ -1,0 +1,838 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #151E27;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.background_image {
+    width: 100%;
+    background-image: url("https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.csgo_logo {
+    display: flex;
+    width: 200px;
+    padding: 10px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+}
+
+nav .first a {
+    font-size: 1em;
+    padding: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f0a500;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+nav .first {
+    display: flex;
+    align-items: center;
+}
+
+nav div.first {
+    align-self: stretch;
+}
+
+nav a.title:hover {
+    color: white;
+}
+
+nav a.title {
+    padding: 20px;
+    border-radius: 15px;
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 2em;
+    color: #f0a500;
+    text-decoration: none;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+nav a.logo:hover {
+    color: white;
+}
+
+main .box_hra {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: #151E27;
+    opacity: 0.95;
+}
+
+main h1 {
+    color: #f0a500;
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+main .box_hra .text {
+    color: #f0a500;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 30px;
+    width: 80%;
+}
+
+main h2 {
+    color: #f0a500;
+    margin-top: 40px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2em;
+}
+
+main .kontejner_box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    width: 90%;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 50px;
+}
+
+main .boxes {
+    background-color: #2f3841;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding: 10px;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+main .novinky {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding-bottom: 150px;
+    background-color: #151E27;
+    opacity: 0.95;
+}
+
+main .novinky .text {
+    color: #f0a500;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 30px;
+    width: 80%;
+}
+
+main .novinky .text_novinky {
+    color: #f0a500;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 30px;
+    width: 80%;
+}
+
+main .novinky .novinky_obrazek {
+    width: 500px;
+    margin-top: 30px;
+}
+
+main .ranky {
+    width: 500px;
+    margin-top: 30px;
+}
+
+main .esport {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding-bottom: 150px;
+    background-color: #151E27;
+    opacity: 0.95;
+}
+
+main .esport .text {
+    color: #f0a500;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 30px;
+    width: 80%;
+}
+
+.kontejner-mapy {
+    display: grid;
+    width: 800px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.mapy {
+    position: relative;
+    width: 320px;
+    height: 180px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.mapa-zobrazeni {
+    display: block;
+    width: 100%;
+}
+
+.mapa-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    font-family: 'Kreon', serif;
+}
+
+.mapa-overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.mapa-overlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.mapa-overlay:hover {
+    opacity: 1;
+}
+
+.mapa-overlay:hover>* {
+    transform: translateY(0);
+}
+
+.mapa-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.kontejner-rank {
+    display: grid;
+    width: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.rank {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.rank-zobrazeni {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.rank-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    font-family: 'Kreon', serif;
+}
+
+.rank-overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.rank-overlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.rank-overlay:hover {
+    opacity: 1;
+}
+
+.rank-overlay:hover>* {
+    transform: translateY(0);
+}
+
+.rank-title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.kontejner-gun {
+    display: grid;
+    width: 800px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.gun {
+    position: relative;
+    width: 320px;
+    height: 180px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.guns-zobrazeni {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.guns-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    font-family: 'Kreon', serif;
+}
+
+.guns-overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.guns-overlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.guns-overlay:hover {
+    opacity: 1;
+}
+
+.guns-overlay:hover>* {
+    transform: translateY(0);
+}
+
+.guns-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.kontejner_passing {
+    height: 500px;
+    width: 60%;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.passing {
+    width: 1000%;
+    height: 100%;
+    display: flex;
+}
+
+.pass {
+    width: 10%;
+}
+
+.pass__img {
+    width: 100%;
+    height: 100%;
+}
+
+.arrow {
+    padding: 20px;
+    color: gray;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow1 {
+    left: 0;
+}
+
+.arrow1:hover {
+    background-color: gray;
+    opacity: 0.9;
+    color: white;
+    border-radius: 30px;
+}
+
+.arrow2 {
+    right: 0;
+}
+
+.arrow2:hover {
+    background-color: gray;
+    opacity: 0.9;
+    color: white;
+    border-radius: 30px;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+}
+
+a.title {
+    padding: 20px;
+    border-radius: 15px;
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #657792;
+    text-decoration: none;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+a.logo:hover {
+    color: #f0a500;
+}
+
+footer {
+    color: #ffffff;
+    height: 100px;
+    text-align: center;
+    background-color: #151E27;
+}
+
+footer h3 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+footer .footer_logo {
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding: 20px;
+}
+
+.valve {
+    margin-top: 40px;
+}
+
+@media (max-width: 1100px) {
+    .csgo_logo {
+        display: flex;
+        width: 100px;
+        padding: 10px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .background_image {
+        width: 100%;
+        background-image: url("https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 1200px) {
+    .kontejner-rank {
+        display: grid;
+        width: 500px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .rank {
+        position: relative;
+        width: 300px;
+        height: 100px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .rank-zobrazeni {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .kontejner-gun {
+        display: grid;
+        width: 800px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .gun {
+        position: relative;
+        width: 320px;
+        height: 180px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .guns-zobrazeni {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .kontejner-mapy {
+        display: grid;
+        width: 800px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .mapy {
+        position: relative;
+        width: 320px;
+        height: 180px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .mapa-zobrazeni {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .kontejner-rank {
+        display: grid;
+        width: 500px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .rank {
+        position: relative;
+        width: 300px;
+        height: 100px;
+        padding: 5px;
+        margin-bottom: 20px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rank-zobrazeni {
+        display: block;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 950px) {
+    .kontejner-gun {
+        display: grid;
+        width: 500px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .gun {
+        position: relative;
+        width: 200px;
+        height: 180px;
+        padding: 5px;
+        margin-bottom: 20px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .guns-zobrazeni {
+        display: block;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .kontejner-mapy {
+        display: grid;
+        width: 250px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .mapy {
+        position: relative;
+        width: 300px;
+        height: 180px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .mapa-zobrazeni {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .kontejner-rank {
+        display: grid;
+        width: 200px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .rank {
+        position: relative;
+        width: 300px;
+        height: 100px;
+        padding: 5px;
+        margin-bottom: 20px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rank-zobrazeni {
+        display: block;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    main .kontejner_box {
+        grid-template-columns: 1fr;
+    }
+    main .novinky .novinky_obrazek {
+        width: 200px;
+    }
+}
+
+@media (max-width: 560px) {
+    nav {
+        font-size: 0.5em;
+        margin-top: -10px;
+    }
+    .kontejner-gun {
+        display: grid;
+        width: 250px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .gun {
+        position: relative;
+        width: 200px;
+        height: 180px;
+        padding: 5px;
+        margin-bottom: 20px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .guns-zobrazeni {
+        display: block;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .kontejner-mapy {
+        display: grid;
+        width: 10px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .mapy {
+        position: relative;
+        width: 300px;
+        height: 180px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .mapa-zobrazeni {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        font-size: 0.2em;
+        justify-content: center;
+    }
+    main h1 {
+        font-size: 2em;
+    }
+    .arrow {
+        margin-top: 150px;
+    }
+    .kontejner_passing {
+        margin-top: -150px;
+    }
+    .kontejner-rank {
+        display: grid;
+        width: 200px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .rank {
+        position: relative;
+        width: 200px;
+        height: 100px;
+        padding: 5px;
+        margin-bottom: 20px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rank-zobrazeni {
+        display: block;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mapy {
+        position: relative;
+        width: 200px;
+        height: 180px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .mapa-zobrazeni {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
